@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body, html {
+  overflow: hidden;
+  font-family: Arial;
+  background: url('../gfx/wall.jpg') -2px 15px repeat;
+}
+
+.tile {
+  position: absolute;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 10px;
+  border: 0;
+  background: url('../gfx/wall.jpg') 0 0 no-repeat;
+  color: transparent;
+}
+
+.poi {
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  line-height: 50px;
+}
+
+.t-W {background: url('../gfx/bricks.png') 0 0 repeat; color:transparent;}
+
+.t-a  {background: url('../gfx/sprites.png') -50px -150px no-repeat; color: transparent;}
+
+/*
+  szklane ściany
+*/
+.t-G {background: url('../gfx/sprites.png') -400px 0px no-repeat; color: transparent;}
+.t-H {background: url('../gfx/sprites.png') -300px -1px repeat-y; color: transparent;}
+.t-I {background: url('../gfx/sprites.png') -350px -49px no-repeat; color: transparent;}
+.t-J {background: url('../gfx/sprites.png') -350px 0px no-repeat; color: transparent;}
+.t-K {background: url('../gfx/sprites.png') -350px 0px no-repeat; color: transparent;}
+.t-L {background: url('../gfx/sprites.png') -350px 0px no-repeat; color: transparent;}
+.t-M {background: url('../gfx/sprites.png') -450px -49px no-repeat; color: transparent;}
+.t-N {background: url('../gfx/sprites.png') -399px -49px no-repeat; color: transparent;}
+
+.t-x {background: url('../gfx/sprites.png') -200px -100px no-repeat; color: transparent;}
+.t-X {background: url('../gfx/sprites.png') -250px -100px no-repeat; color: transparent;}
+
+.t-f  {background: url('../gfx/sprites.png') -300px -100px no-repeat; color: transparent;}
+.t-g  {background: url('../gfx/sprites.png') -350px -100px no-repeat; color: transparent;}
+.t-h  {background: url('../gfx/sprites.png') -400px -100px no-repeat; color: transparent;}
+.t-i  {background: url('../gfx/sprites.png') -450px -100px no-repeat; color: transparent;}
+
+.t-j  {background: url('../gfx/sprites.png') 0 -100px no-repeat; color: transparent;}
+.t-k  {background: url('../gfx/sprites.png') 0 -150px no-repeat; color: transparent;}
+
+/*
+  biurka
+*/
+.t-B  {background: url('../gfx/sprites.png') -101px -1px no-repeat; border-top:1px solid transparent; color: transparent;}
+.t-C  {background: url('../gfx/sprites.png') -151px -1px no-repeat; border-top:1px solid transparent; color: transparent;}
+.t-P  {background: url('../gfx/sprites.png') -101px -51px no-repeat; border-bottom:1px solid transparent; color: transparent;}
+.t-Q  {background: url('../gfx/sprites.png') -151px -51px no-repeat; border-bottom:1px solid transparent; color: transparent;}
+.t-b  {background: url('../gfx/sprites.png') -101px -101px no-repeat; border-top:1px solid transparent; border-bottom:1px solid transparent; color: transparent;}
+.t-c  {background: url('../gfx/sprites.png') -151px -101px no-repeat; border-top:1px solid transparent; border-bottom:1px solid transparent; color: transparent;}
+
+.t-D  {background: url('../gfx/sprites.png') -201px -1px no-repeat; border-right:1px solid transparent; border-top:1px solid transparent; color: transparent;}
+.t-E  {background: url('../gfx/sprites.png') -201px -51px no-repeat; border-right:1px solid transparent; border-bottom:1px solid transparent; color: transparent;}
+.t-d  {background: url('../gfx/sprites.png') -51px -51px no-repeat; border-right:1px solid transparent; border-left:1px solid transparent; color: transparent;}
+.t-e  {background: url('../gfx/sprites.png') -51px -101px no-repeat; border-right:1px solid transparent; border-left:1px solid transparent; color: transparent;}
+.t-R  {background: url('../gfx/sprites.png') -251px -1px no-repeat; border-left:1px solid transparent; border-top:1px solid transparent; color: transparent;}
+.t-S  {background: url('../gfx/sprites.png') -251px -51px no-repeat; border-left:1px solid transparent; border-bottom:1px solid transparent; color: transparent;}
+.t-Z  {background: url('../gfx/sprites.png') -50px 0 no-repeat; color:transparent;}
+.t-A  {background: url('../gfx/sprites.png') 0 -50px no-repeat; color:transparent;}
+
+
+#engine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #eee;
+}
+
+#player {
+  position: absolute;
+  background: url('../gfx/sprites.png') 0 0 no-repeat;
+}
+
+#message {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px 20px;
+  border: 1px solid #666;
+  box-shadow: 0 0 10px white;
+  background: white;
+  display: none;
+}
+
+#dialog {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 900px;
+  height: 200px;
+  box-shadow: 0 0 20px black;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  display: none;
+}
+
+#dialog a {
+  color: red;
+}
+
+#manual {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 900px;
+  height: 380px;
+  padding: 40px;
+  box-shadow: 0 0 20px black;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+}
+
+#manual h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#manual p {
+  padding-left: 10px;
+}
+
+#manual p + h4 {
+  margin-top: 20px;
+}
+
+#manual h5 {
+  font-size: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#manual button {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 18px;
+  padding: 3px 10px;
+}
+
+#dialog img {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+#dialog img:first-child {
+  left: 0;
+  border-right: 1px solid #aaa;
+}
+
+#dialog img:last-child {
+  right: 0;
+  border-left: 1px solid #aaa;
+}
+
+#dialog div {
+  position: absolute;
+  left: 199px;
+  top: 0;
+  width: 502px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+#dialog div p {
+  background: #e5e5e5;
+  width: 450px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  font: 12px Verdana;
+  margin-top: 10px;
+}
+
+#dialog div p:before {
+  content: '- ';
+}
+
+#dialog div p.gietek {
+  margin-left: 38px;
+}
+
+#dialog div p.person {
+  margin-left: -1px;
+}

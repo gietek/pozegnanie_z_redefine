@@ -1,0 +1,54 @@
+var rooms = [{
+	coordinates: [0, 0],
+	dimensions: [70, 49],
+	points:
+		"...WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW................"+
+		"...W......W...Whi.W...W.hiW.......W.....W....W..W...xWWWWWWW.........."+
+		"...W.D..R.W...W...W...W...W.PQ.PQ.W.PQ..W.dd.W..W.dd.Wx....WWWWWWWWW.."+
+		"...W.E..S.W...W...W...W...W.......W.....W.ee.W..W.ee.W..hi.W.x.....W.."+
+		"...W.D....W...W...W...W...W.......W.....W.dd.W..W.dd.W.D...W.....x.W.."+
+		"...W.E..R.W...W...W...W...W.....R.W.D...W.ee.W..W.ee.W.E...W..X....W.."+
+		"...W....S.W...W...W...W...W.....S.W.E...W.dd.W..W.dd.W.....W....BC.W.."+
+		"...WBC....W...W...W...W...W.......W.....W.ee.W..W.ee.W.....W..x....W.."+
+		"...W......W...W...W...W...W.......W.....Wx...W..W....Wx....W.....X.W.."+
+		"...WWWW.WWWWAWWWAWWWAWWWAWWWWW.WWWWWW.WWWW.WWWWAWWW.WWWWW.WWAWWWWWWW.."+
+		"...W.........................................................W....XW.."+
+		"...W.........................................................W..bc.W.."+
+		"...WWWWWWW.WWWWWWWWWWWWWWWWWW...............WWWWWWWWWWWWWWW.....ES.W.."+
+		".........W.W.......hi.......W..WWWWWWW......W...W............W.....W.."+
+		".........W.W..x.......X.....W..W.Z..dW......W...W.bcbcbc..W.WWWWWWWW.."+
+		".........W.W....X...........W....Z..eW......W...W.bcbcbc..W........W.."+
+		".........W.W..........x.....W.......dW......W...W.........W........W.."+
+		".........W.W..x.............W..WWWWWWW......WWAWWWWWWWWWWWWWWWWWWWWWWW"+
+		".........W.W................W..W.....W...................W...........W"+
+		".........W.W....X....X......W........W...................W..PQ.PQ.PQ.W"+
+		".........W.W............fg..W..WWWWWWWx..........PQbc....W.D.......R.W"+
+		".........W.W.......x........W........WXx.................W.E.......S.W"+
+		".........W.W................W..W.....W.Xx.fg.........................W"+
+		".........W.WWWWWWWWWWWWWWWWWW..WWWWWWWWWWWWWWWWWWWAWWWWWWWW..BC.BC.R.W"+
+		".........W.W..........W..........Z..dW.........W....W.....W........S.W"+
+		"WWWWWWWWWW.W..........W.ZZZZ........eW.........W....W.....Wx.......X.W"+
+		"W........W.W..........W.............dW.........W....W.....WWWWWWWWWWWW"+
+		"W........W.W..........W.ZZZZ........eW.........W....W.....W...W......W"+
+		"W........W.W..........W.............dW.........W....W.....W...W..PQ..W"+
+		"W....j...W.W..........W....Z........eW.........W....W.....W...W....fgW"+
+		"Wfg..k...W.W..........WZZ..Z........dW.........W....W.....W...WWW.WWWW"+
+		"WWWW.WWWWW.WWW.WWWWWWWWWWWWWW..WWWWWWWWWWWWWWWWWWWAWWWWWWWW...W......W"+
+		"W...............................................................bcbc.W"+
+		"W.............................................................W......W"+
+		"WWWWWWWW..WWW.WWWWWWWWWWWW..WWWWWWWWW..WWWWWWWWWWW..WWWWWWWW..WWWWWWW."+
+		"W..........W........W...........a..........dW...........a.......H.R.W."+
+		"W.DPQPQ....W........W...H..................eW.PQPQ..............H.S.W."+
+		"W.E........W..bcbc..WGGGI.........D...dR...dW..D..........DR........W."+
+		"W..........W..bcbc..W........R....E...eS...eW..E.....DR...ES....H.R.W."+
+		"W.DBCBC....W........W.D......S....D...DR...dW..D.....ES...DR....H.S.W."+
+		"W.E........W........W.E.H...DR....E...ES...eW..E..........ES....NGGGW."+
+		"W..........WWWWWWWWWWGGGI...ES...D....DR...dW..D..........DR....H.R.W."+
+		"W...................W.......DR...E....ES...eW..E..........ES......S.W."+
+		"W...................W.D.....ES...DR....R...dW..D..........DR....H...W."+
+		"W...................W.E.H...BC...ES....S...eW..E..........ES....NGGGW."+
+		"W...................WGGGM...................W..d................HBC.W."+
+		"W........x..........W...H......................eBC...a..........H...W."+
+		"W..x.x.x...x.x.x....WPQ.....xx..a....bcbc...........................W."+
+		"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW."
+}];
